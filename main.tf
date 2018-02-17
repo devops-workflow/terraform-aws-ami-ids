@@ -1,4 +1,6 @@
-# Lookups on marketplace seem slower than others
+# Lookups on marketplace seem much slower than others
+
+# TODO: add variables for AmazonLinux version and try for Ubuntu
 
 locals {
   names = "amazonlinux,ecs,ubuntu1604"
