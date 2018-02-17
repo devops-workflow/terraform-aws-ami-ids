@@ -12,7 +12,7 @@ locals {
   ))}"
 
   patterns = "${join(",", list(
-    "amzn-ami-hvm-*-x86_64-gp2",
+    "amzn-ami-hvm-${var.ami_version_amazonlinux}-x86_64-gp2",
     "amzn-ami-${var.ami_version_ecs}-amazon-ecs-optimized",
     "ubuntu/images/hvm-ssd/ubuntu-xenial-16.04-amd64-server-*"
   ))}"

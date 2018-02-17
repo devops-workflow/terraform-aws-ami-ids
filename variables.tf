@@ -10,6 +10,11 @@ variable "ami_owners" {
   }
 }
 
+variable "ami_version_amazonlinux" {
+  description = "Amazon Linux version to get"
+  default     = "*"
+}
+
 variable "ami_version_ecs" {
   description = "Amazon ECS Optimized version to get"
   default     = "*"
