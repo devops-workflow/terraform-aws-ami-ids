@@ -7,8 +7,8 @@ Usage
 -----
 
 ```hcl
-module "ami_id" {
-  source =
-  distribution = "ecs"
+module "ami-ids" {
+  source        = "devops-workflow/ami-ids/aws"
+  distribution  = "ecs"
 }
 ```
