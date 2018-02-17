@@ -3,7 +3,7 @@
 # TODO: add variables for AmazonLinux version and try for Ubuntu
 
 locals {
-  names = "amazonlinux,ecs,ubuntu1604"
+  names = "amazonlinux,ecs,ubuntu"
 
   owners = "${join(",", list(
     var.ami_owners["amazon"],
@@ -14,7 +14,7 @@ locals {
   patterns = "${join(",", list(
     "amzn-ami-hvm-${var.ami_version_amazonlinux}-x86_64-gp2",
     "amzn-ami-${var.ami_version_ecs}-amazon-ecs-optimized",
-    "ubuntu/images/hvm-ssd/ubuntu-xenial-16.04-amd64-server-*"
+    "ubuntu/images/hvm-ssd/ubuntu-${var.ami_version_ubuntu}-amd64-server-*"
   ))}"
 }
 

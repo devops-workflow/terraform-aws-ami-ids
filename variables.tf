@@ -20,6 +20,11 @@ variable "ami_version_ecs" {
   default     = "*"
 }
 
+variable "ami_version_ubuntu" {
+  description = "Ubuntu version to get"
+  default     = "xenial-16.04"
+}
+
 variable "distribution" {
-  description = "Linux distribution for AWS AMI, supported: amazonlinux, ecs, ubuntu1604"
+  description = "Linux distribution for AWS AMI, supported: amazonlinux, ecs, ubuntu"
 }
