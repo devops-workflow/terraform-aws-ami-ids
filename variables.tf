@@ -8,6 +8,7 @@ variable "ami_owners" {
     canonical = "099720109477"
     debian    = "379101102735"
     fedora    = "125523088429"
+    redhat    = "309956199498"
   }
 }
 
