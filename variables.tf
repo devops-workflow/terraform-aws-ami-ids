@@ -4,8 +4,9 @@ variable "ami_owners" {
 
   default = {
     amazon    = "amazon"
-    centos    = "679593333241" # Marketplace
+    centos    = "679593333241" # Marketplace?
     canonical = "099720109477"
+    debian    = "379101102735"
     fedora    = "125523088429"
   }
 }
